@@ -1,0 +1,353 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Sine (sin θ) - Scientific Calculator</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --deep-blue: #0d3b66;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(180deg, #fff9f2 0%, #f4f6fb 100%);
+            margin: 0;
+        }
+
+        header {
+            background: radial-gradient(circle at top, #ffd166 0%, #ff9f1c 80%);
+            padding: 16px 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
+        }
+
+        .brand {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(255, 255, 255, 0.25);
+            color: #1f1f1f;
+            padding: 10px 18px;
+            border-radius: 999px;
+            font-weight: 600;
+        }
+
+        .brand span {
+            display: inline-block;
+            background: #1f1f1f;
+            color: #ece4e4;
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 26px;
+            font-size: 14px;
+        }
+
+        header a {
+            font-weight: 500;
+            color: #1f1f1f !important;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        header a:hover {
+            color: var(--deep-blue) !important;
+        }
+
+
+        .btn-dark {
+            background: #e6aa07;
+            color: #1f1f1f;
+            border: none;
+            font-weight: 500;
+        }
+
+        .btn-dark:hover {
+            background: var(--deep-blue);
+            color: #fff;
+        }
+
+
+        .content-card {
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+            padding: 40px;
+            margin-top: 30px;
+            width: 100%;
+        }
+
+        h1,
+        h2 {
+            color: var(--deep-blue);
+            font-weight: 700;
+            text-align: center;
+        }
+
+        .top-img {
+            display: block;
+            margin: auto;
+            width: 100%;
+            max-width: 650px;
+            border-radius: 15px;
+        }
+
+
+        .quiz-card {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 24px;
+            border: 1px solid #ddd;
+        }
+
+
+        .accordion-button:not(.collapsed) {
+            color: #fff;
+            background-color: var(--deep-blue);
+            box-shadow: none;
+        }
+
+        .accordion-button:focus {
+            border-color: rgba(13, 59, 102, 0.5);
+            box-shadow: 0 0 0 0.25rem rgba(13, 59, 102, 0.25);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container d-flex flex-wrap gap-3 justify-content-between align-items-center">
+            <div class="brand">
+                <span>Σ</span><strong>Scientific Calculator</strong>
+            </div>
+
+            <nav class="d-flex align-items-center flex-wrap">
+                <a href="secondindex.html" class="text-decoration-none me-3">Home</a>
+                <a href="banda.html" class="text-decoration-none me-3">About</a>
+                <a href="secondindex.html" class="text-decoration-none me-3">Categories</a>
+
+                <a href="profile.html" class="btn btn-dark btn-sm">
+                    <i class="fas fa-user-circle me-1"></i> Profile
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container-fluid">
+
+        <div class="content-card">
+
+            <h1>Sine (sin θ)</h1>
+            <img src="sin.image.jpg" class="top-img" alt="Sine Wave">
+
+            <div class="row mt-5">
+
+                <div class="col-lg-8">
+                    <div class="accordion" id="sinAccordion">
+
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#def" aria-expanded="true" aria-controls="def">
+                                    Definition
+                                </button>
+                            </h2>
+                            <div id="def" class="accordion-collapse collapse show" data-bs-parent="#sinAccordion">
+                                <div class="accordion-body">
+                                    <h2>Definition</h2>
+                                    <p>The sine function is one of the fundamental trigonometric functions. In a right
+                                        triangle, sine of an angle **θ** is defined as the ratio of the length of the
+                                        side **opposite** to the angle to the length of the **hypotenuse**.</p>
+                                    <p><strong>Formula:</strong> $\sin \theta = \text{opposite} / \text{hypotenuse}$</p>
+                                    On the unit circle, sine is the **y-coordinate**.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#under" aria-expanded="false" aria-controls="under">
+                                    Understanding Sine
+                                </button>
+                            </h2>
+                            <div id="under" class="accordion-collapse collapse" data-bs-parent="#sinAccordion">
+                                <div class="accordion-body">
+                                    <h2>Understanding Sine</h2>
+                                    <p>Sine represents the vertical component of a point on a unit circle. When you have
+                                        a right triangle:</p>
+                                    <ul>
+                                        <li>The **opposite side** is the side directly across from angle θ</li>
+                                        <li>The **hypotenuse** is the longest side, opposite the right angle</li>
+                                        <li>sin θ gives you the ratio between these two sides</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#prop" aria-expanded="false" aria-controls="prop">
+                                    Key Properties
+                                </button>
+                            </h2>
+                            <div id="prop" class="accordion-collapse collapse" data-bs-parent="#sinAccordion">
+                                <div class="accordion-body">
+                                    <h2>Key Properties</h2>
+                                    <ul>
+                                        <li>**Range:** $\sin \theta$ ranges from -1 to 1</li>
+                                        <li>**Maximum:** $\sin \theta = 1$ when $\theta = 90^\circ$ (or $\pi/2$ radians)
+                                            + $360^\circ k$</li>
+                                        <li>**Minimum:** $\sin \theta = -1$ when $\theta = 270^\circ$ (or $3\pi/2$
+                                            radians) + $360^\circ k$</li>
+                                        <li>**Zero points:** $\sin \theta = 0$ when $\theta = 0^\circ, 180^\circ,
+                                            360^\circ$, etc. (or $0, \pi, 2\pi$ radians)</li>
+                                        <li>**Period:** The sine function repeats every $360^\circ$ (or $2\pi$ radians)
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#apps" aria-expanded="false" aria-controls="apps">
+                                    Applications
+                                </button>
+                            </h2>
+                            <div id="apps" class="accordion-collapse collapse" data-bs-parent="#sinAccordion">
+                                <div class="accordion-body">
+                                    <h2>Applications</h2>
+                                    <ul>
+                                        <li>**Wave Motion:** Sine waves model oscillations, sound waves, and light waves
+                                        </li>
+                                        <li>**Physics:** Used in simple harmonic motion, alternating current (AC)
+                                            circuits</li>
+                                        <li>**Engineering:** Signal processing, vibration analysis</li>
+                                        <li>**Navigation:** Calculating heights and distances</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#graph" aria-expanded="false" aria-controls="graph">
+                                    Graph Characteristics
+                                </button>
+                            </h2>
+                            <div id="graph" class="accordion-collapse collapse" data-bs-parent="#sinAccordion">
+                                <div class="accordion-body">
+                                    <h2>Graph Characteristics of $\sin \theta$</h2>
+                                    <ul>
+                                        <li>**Shape:** Smooth, continuous wave called a sine wave.</li>
+                                        <li>**Amplitude:** 1 (maximum distance from the middle line).</li>
+                                        <li>**Period:** $360^\circ$ or $2\pi$ radians.</li>
+                                        <li>**Midline:** $y = 0$.</li>
+                                        <li>**Maximum Point:** $(90^\circ, 1)$ or $(\pi/2, 1)$.</li>
+                                        <li>**Minimum Point:** $(270^\circ, –1)$ or $(3\pi/2, –1)$.</li>
+                                        <li>**Zero Crossings:** $0^\circ, 180^\circ, 360^\circ$ $(0, \pi, 2\pi)$.</li>
+                                        <li>**Nature:** It is an **odd function** $\rightarrow \sin(-\theta) =
+                                            -\sin(\theta)$.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#ident" aria-expanded="false" aria-controls="ident">
+                                    Important Identities
+                                </button>
+                            </h2>
+                            <div id="ident" class="accordion-collapse collapse" data-bs-parent="#sinAccordion">
+                                <div class="accordion-body">
+                                    <h2>Important Sine Identities</h2>
+                                    <ul>
+                                        <li>**Reciprocal:** $\sin \theta = 1 / \csc \theta$</li>
+                                        <li>**Pythagorean Identity:** $\sin^2\theta + \cos^2\theta = 1$</li>
+                                        <li>**Co-function:** $\sin(90^\circ − \theta) = \cos \theta$</li>
+                                        <li>**Addition Formula:** $\sin(a + b) = \sin a \cos b + \cos a \sin b$</li>
+                                        <li>**Subtraction Formula:** $\sin(a − b) = \sin a \cos b − \cos a \sin b$</li>
+                                        <li>**Double Angle:** $\sin(2\theta) = 2 \sin \theta \cos \theta$</li>
+                                        <li>**Half Angle:** $\sin(\theta/2) = \sqrt{((1 − \cos \theta) / 2)}$</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#examples" aria-expanded="false" aria-controls="examples">
+                                    Examples
+                                </button>
+                            </h2>
+                            <div id="examples" class="accordion-collapse collapse" data-bs-parent="#sinAccordion">
+                                <div class="accordion-body">
+                                    <h2>Example Problems</h2>
+
+                                    <p><strong>Example 1:</strong> Find $\sin(30^\circ)$</p>
+                                    <p><strong>Solution:</strong><br>
+                                        $\sin(30^\circ) = 1/2$
+                                    </p>
+
+                                    <p><strong>Example 2:</strong> If a right triangle has opposite = 5 and hypotenuse =
+                                        13, find $\sin \theta$.</p>
+                                    <p><strong>Solution:</strong><br>
+                                        $\sin \theta = \text{opposite} / \text{hypotenuse} = 5/13$
+                                    </p>
+
+                                    <p><strong>Example 3:</strong> Find $\sin(2\theta)$ when $\sin \theta = 3/5$ and
+                                        $\cos \theta = 4/5$.</p>
+                                    <p><strong>Solution:</strong><br>
+                                        $\sin(2\theta) = 2 \sin \theta \cos \theta = 2 \times (3/5) \times (4/5) =
+                                        24/25$
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4">
+                    <div class="quiz-card">
+                        <h3 class="mb-3 text-center">Quick Quiz</h3>
+
+                        <p><b>1. What is $\sin(90^\circ)$?</b></p>
+                        <div><input type="radio" name="q1"> 0</div>
+                        <div><input type="radio" name="q1"> -1</div>
+                        <div><input type="radio" name="q1"> 1 </div>
+
+                        <p class="mt-3"><b>2. $\sin \theta = ?$</b></p>
+                        <div><input type="radio" name="q2"> Adjacent / Hypotenuse</div>
+                        <div><input type="radio" name="q2"> Opposite / Hypotenuse </div>
+                        <div><input type="radio" name="q2"> Hypotenuse / Opposite</div>
+
+                        <a href="secondindex.html" class="btn btn-primary mt-4 w-100">Back to Calculator</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

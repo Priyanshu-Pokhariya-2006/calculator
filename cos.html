@@ -1,0 +1,296 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Cosine (cos θ) - Scientific Calculator</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --deep-blue: #0d3b66;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(180deg, #fff9f2 0%, #f4f6fb 100%);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: radial-gradient(circle at top, #ffd166 0%, #ff9f1c 80%);
+            padding: 16px 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .brand {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(255, 255, 255, 0.25);
+            padding: 10px 18px;
+            border-radius: 999px;
+            color: #1f1f1f;
+            font-weight: 600;
+        }
+
+        .brand span {
+            background: #1f1f1f;
+            color: #ece4e4;
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 26px;
+            font-size: 14px;
+            display: inline-block;
+        }
+
+        header a {
+            color: #1f1f1f !important;
+            font-weight: 500;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        header a:hover {
+            color: var(--deep-blue) !important;
+        }
+
+       
+        .btn-dark {
+            background: #e6aa07;
+            color: #1f1f1f;
+            border: none;
+            font-weight: 500;
+        }
+
+        .btn-dark:hover {
+            background: var(--deep-blue);
+            color: #fff;
+        }
+
+       
+
+        .content-card {
+            background: #ffffff;
+            border-radius: 18px;
+            padding: 40px;
+            margin-top: 30px;
+            box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+        }
+
+        h1,
+        h2 {
+            color: var(--deep-blue);
+            font-weight: 700;
+            text-align: center;
+        }
+
+        .top-img {
+            display: block;
+            margin: auto;
+            width: 100%;
+            max-width: 650px;
+            border-radius: 15px;
+        }
+
+        .quiz-card {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 24px;
+            border: 1px solid #ddd;
+        }
+
+       
+        .accordion-button:not(.collapsed) {
+            color: #fff;
+            background-color: var(--deep-blue);
+            box-shadow: none;
+        }
+
+        .accordion-button:focus {
+            border-color: rgba(13, 59, 102, 0.5);
+            box-shadow: 0 0 0 0.25rem rgba(13, 59, 102, 0.25);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container d-flex flex-wrap gap-3 justify-content-between align-items-center">
+            <div class="brand">
+                <span>Σ</span><strong>Scientific Calculator</strong>
+            </div>
+
+            <nav class="d-flex align-items-center flex-wrap">
+                <a href="secondindex.html" class="text-decoration-none me-3">Home</a>
+                <a href="banda.html" class="text-decoration-none me-3">About</a>
+                <a href="secondindex.html" class="text-decoration-none me-3">Categories</a>
+                <a href="profile.html" class="btn btn-dark btn-sm">
+                    <i class="fas fa-user-circle me-1"></i> Profile
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container-fluid">
+
+        <div class="content-card">
+
+            <h1>Cosine ($\cos \theta$)</h1>
+            <img src="cos.image.jpg" class="top-img" alt="Cosine Wave">
+
+            <div class="row mt-5">
+
+                <div class="col-lg-8">
+                    <div class="accordion" id="trigAccordion">
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#cosdef" aria-expanded="true" aria-controls="cosdef">
+                                    Definition
+                                </button>
+                            </h2>
+                            <div id="cosdef" class="accordion-collapse collapse show" data-bs-parent="#trigAccordion">
+                                <div class="accordion-body">
+                                    <h2>Definition</h2>
+                                    <p>**Cosine ($\cos \theta$)** of an angle $\theta$ in a **right triangle** is the
+                                        ratio of the adjacent side to the hypotenuse.</p>
+                                    <p><b>Formula:</b> $\cos \theta = \frac{\text{Adjacent}}{\text{Hypotenuse}}$</p>
+                                    <p>On the **unit circle**, cosine is the **x-coordinate** of the point corresponding
+                                        to the angle $\theta$.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#cosunder" aria-expanded="false" aria-controls="cosunder">
+                                    Understanding Cosine
+                                </button>
+                            </h2>
+                            <div id="cosunder" class="accordion-collapse collapse" data-bs-parent="#trigAccordion">
+                                <div class="accordion-body">
+                                    <h2>Understanding Cosine</h2>
+                                    <p>The cosine function describes the **horizontal component** of a radius vector
+                                        rotating around the origin.</p>
+                                    <ul>
+                                        <li>The **Adjacent side** is the side next to the angle $\theta$ (not the
+                                            hypotenuse).</li>
+                                        <li>The **Hypotenuse** is the longest side, opposite the right angle.</li>
+                                        <li>The value $\cos \theta$ is the horizontal ratio (Adjacent/Hypotenuse).</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#cosprop" aria-expanded="false" aria-controls="cosprop">
+                                    Key Properties
+                                </button>
+                            </h2>
+                            <div id="cosprop" class="accordion-collapse collapse" data-bs-parent="#trigAccordion">
+                                <div class="accordion-body">
+                                    <h2>Key Properties</h2>
+                                    <ul>
+                                        <li>**Range:** The value of $\cos \theta$ is always between $-1$ and $1$
+                                            (inclusive).</li>
+                                        <li>$\cos(0^\circ) = 1$ (Maximum value)</li>
+                                        <li>$\cos(180^\circ) = -1$ (Minimum value)</li>
+                                        <li>**Zeros:** $\cos \theta = 0$ at $90^\circ$ ($\pi/2$ radians) and $270^\circ$
+                                            ($3\pi/2$ radians).</li>
+                                        <li>**Period:** The function repeats every $360^\circ$ or $2\pi$ radians.</li>
+                                        <li>**Even Function:** $\cos(-\theta) = \cos(\theta)$.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#cosident" aria-expanded="false" aria-controls="cosident">
+                                    Important Identities
+                                </button>
+                            </h2>
+                            <div id="cosident" class="accordion-collapse collapse" data-bs-parent="#trigAccordion">
+                                <div class="accordion-body">
+                                    <h2>Identities</h2>
+                                    <ul>
+                                        <li>**Pythagorean Identity:** $\sin^2\theta + \cos^2\theta = 1$</li>
+                                        <li>**Cofunction Identity:** $\cos(90^\circ - \theta) = \sin \theta$</li>
+                                        <li>**Double Angle Formula:** $\cos(2\theta) = \cos^2\theta - \sin^2\theta =
+                                            2\cos^2\theta - 1 = 1 - 2\sin^2\theta$</li>
+                                        <li>**Angle Addition Formula:** $\cos(a + b) = \cos a \cos b - \sin a \sin b$
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#cosexample" aria-expanded="false" aria-controls="cosexample">
+                                    Examples
+                                </button>
+                            </h2>
+                            <div id="cosexample" class="accordion-collapse collapse" data-bs-parent="#trigAccordion">
+                                <div class="accordion-body">
+                                    <h2>Examples</h2>
+
+                                    <p><b>1. Standard Value:</b> $\cos(60^\circ) = \frac{1}{2}$</p>
+
+                                    <p><b>2. Right Triangle:</b> If the Adjacent side is $8$ and the Hypotenuse is $10$,
+                                        then $\cos \theta = \frac{8}{10} = \frac{4}{5}$.</p>
+
+                                    <p><b>3. Double Angle:</b> If $\sin \theta=\frac{3}{5}$, then $\cos
+                                        \theta=\frac{4}{5}$ (from Pythagorean Identity). Therefore, $\cos(2\theta) =
+                                        2\cos^2\theta - 1 = 2(\frac{4}{5})^2 - 1 = 2(\frac{16}{25}) - 1 = \frac{32}{25}
+                                        - \frac{25}{25} = \frac{7}{25}$.</p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4">
+                    <div class="quiz-card">
+                        <h3 class="text-center">Quick Quiz</h3>
+
+                        <p><b>1. $\cos(0^\circ) = 1$?</b></p>
+                        <div><input type="radio" name="q1"> Yes</div>
+                        <div><input type="radio" name="q1"> No</div>
+
+                        <p class="mt-3"><b>2. $\cos \theta = \text{opposite} / \text{hypotenuse}$?</b></p>
+                        <div><input type="radio" name="q2"> Yes</div>
+                        <div><input type="radio" name="q2"> No</div>
+
+                        <p class="mt-3"><b>3. $\cos(90^\circ) = 0$?</b></p>
+                        <div><input type="radio" name="q3"> Yes</div>
+                        <div><input type="radio" name="q3"> No</div>
+
+                        <a href="secondindex.html" class="btn btn-primary mt-4 w-100">Back to Calculator</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

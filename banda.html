@@ -1,0 +1,263 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About & Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --deep-blue: #0d3b66;
+            --main-yellow: #ff9800;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(180deg, #fff9f2 0%, #f4f6fb 100%);
+            margin: 0;
+        }
+
+
+        header {
+            background: radial-gradient(circle at top, #ffd166 0%, #ff9f1c 80%);
+            padding: 16px 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
+        }
+
+        .brand {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(255, 255, 255, 0.25);
+            padding: 10px 18px;
+            border-radius: 999px;
+            color: #1f1f1f;
+            font-weight: 600;
+        }
+
+        .brand span {
+            background: #1f1f1f;
+            color: #ece4e4;
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 26px;
+            font-size: 14px;
+            display: inline-block;
+        }
+
+        header a {
+            color: #1f1f1f !important;
+            font-weight: 500;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        header a:hover {
+            color: var(--deep-blue) !important;
+        }
+
+
+        .btn-dark {
+            background: #e6aa07;
+            color: #1f1f1f;
+            border: none;
+            font-weight: 500;
+        }
+
+        .btn-dark:hover {
+            background: var(--deep-blue);
+            color: #fff;
+        }
+
+
+        .main-header {
+            background: linear-gradient(135deg, #ffcc33, #ffb300, var(--main-yellow));
+            padding: 30px 0;
+            color: white;
+            text-align: center;
+            border-bottom-left-radius: 60px;
+            border-bottom-right-radius: 60px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .main-header h1 {
+            color: #fff;
+            font-weight: 800;
+        }
+
+        .team-card {
+            background: #fff;
+            border-radius: 20px;
+            padding: 25px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+            transition: 0.35s;
+            text-align: center;
+            border: 1px solid #eee;
+        }
+
+        .team-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+            background: #fff;
+        }
+
+        .team-photo {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            border: 5px solid var(--main-yellow);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            transition: 0.3s;
+        }
+
+        .team-photo:hover {
+            transform: scale(1.08) rotate(3deg);
+            border-color: var(--deep-blue);
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            font-weight: bold;
+            color: var(--deep-blue);
+            font-size: 32px;
+        }
+
+        .project-section {
+            background: #fff8e1;
+            padding: 50px;
+            border-radius: 25px;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .project-section:hover {
+            transform: translateY(-6px);
+            transition: 0.5s;
+        }
+
+        .accordion-button:not(.collapsed) {
+            color: #fff;
+            background-color: var(--deep-blue);
+            box-shadow: none;
+        }
+
+        .accordion-button:focus {
+            border-color: rgba(13, 59, 102, 0.5);
+            box-shadow: 0 0 0 0.25rem rgba(13, 59, 102, 0.25);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container d-flex flex-wrap gap-3 justify-content-between align-items-center">
+            <div class="brand">
+                <span>Σ</span><strong>Scientific Calculator</strong>
+            </div>
+
+            <nav class="d-flex align-items-center flex-wrap">
+                <a href="secondindex.html" class="me-3">Home</a>
+                <a href="banda.html" class="me-3">About</a>
+                <a href="secondindex.html" class="me-3">Categories</a>
+                <a href="profile.html" class="btn btn-dark btn-sm">
+                    <i class="fas fa-user-circle me-1"></i> Profile
+                </a>
+            </nav>
+        </div>
+    </header>
+
+
+    <div class="main-header">
+        <h1>About Us</h1>
+        <p class="lead">Meet the team behind the Scientific Calculator project.</p>
+    </div>
+
+
+    <div class="container py-5">
+        <h2 class="section-title">Our Team</h2>
+
+        <div class="row justify-content-center">
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="team-card">
+                    <img src="hasmitha.img.jpg" class="team-photo" alt="Photo of Ms.hasmitha">
+                    <h4 class="fw-bold text-dark">Ms.hasmitha</h4>
+                    <p class="text-muted">Lead Developer</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="team-card">
+                    <img src="chaithra-2.img.jpg" class="team-photo" alt="Photo of Ms.chaithra">
+                    <h4 class="fw-bold text-dark">Ms.chaithra</h4>
+                    <p class="text-muted">Project Manager & UI/UX</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="team-card">
+                    <img src="priyanshu.jpg" class="team-photo" alt="Photo of Mr.Priyanshu">
+                    <h4 class="fw-bold text-dark">Mr.Priyanshu</h4>
+                    <p class="text-muted">Documentation & Content</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="project-section">
+            <h2 class="section-title">About Our Project</h2>
+
+            <div class="accordion" id="projectAccordion">
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#aboutCalc" aria-expanded="true" aria-controls="aboutCalc">
+                            About Our Calculator
+                        </button>
+                    </h2>
+                    <div id="aboutCalc" class="accordion-collapse collapse show" data-bs-parent="#projectAccordion">
+                        <div class="accordion-body">
+                            This is a simple scientific calculator built with HTML, CSS, and JavaScript (implied by the
+                            functionality, though not explicitly shown in code snippets). It helps you perform basic
+                            math operations, trigonometry functions, unit conversions, and more. Our goal was to create
+                            a clean, responsive, and educational tool.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#howMade" aria-expanded="false" aria-controls="howMade">
+                            Technology Stack
+                        </button>
+                    </h2>
+                    <div id="howMade" class="accordion-collapse collapse" data-bs-parent="#projectAccordion">
+                        <div class="accordion-body">
+                            <p><strong>Frontend:</strong> HTML, CSS, JavaScript</p>
+                            <p><strong>Framework/Library:</strong> Bootstrap 5.3</p>
+                            <p>We designed, structured, and styled the calculator with responsive sections and a clean
+                                UI, leveraging Bootstrap for layout and component styling.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
